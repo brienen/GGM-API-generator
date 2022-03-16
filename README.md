@@ -4,7 +4,7 @@ Dit is een demonstratieproject om te laten zien hoe je op basis van het [Gemeent
 
 ## Aan de slag
 
-Zorg dat je Docker en [Docker-compose](https://github.com/docker/compose) hebt geïnstalleerd. Dit project maakt gebruik van [Dockerizing Flask with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx). Hier kun je meert informatie vinden over de opbouw van het project.
+Zorg dat je [Docker](https://www.docker.com) en [Docker-compose](https://github.com/docker/compose) hebt geïnstalleerd. Dit project is voortgebouwd op [Dockerizing Flask with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx). Voor het verder tweeken van de container en het koppelen van een andere database vind je hier meer informatie.
 
 ### Start de container
 
