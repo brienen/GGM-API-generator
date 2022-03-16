@@ -1,0 +1,58 @@
+2022-03-09 14:29:32,663 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:29:32,664 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:29:52,079 WARNING werkzeug MainThread :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-09 14:29:52,080 INFO werkzeug MainThread :  * Running on http://192.168.96.3:5000/ (Press CTRL+C to quit)
+2022-03-09 14:29:52,081 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:29:53,071 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:29:53,072 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:31:40,290 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/manage.py', reloading
+2022-03-09 14:31:40,386 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:31:41,444 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:31:41,445 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:36:23,396 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/project/database.py', reloading
+2022-03-09 14:36:23,477 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:36:24,480 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:36:24,481 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:36:36,618 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/project/database.py', reloading
+2022-03-09 14:36:36,710 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:36:37,946 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:36:37,947 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:36:43,590 INFO root MainThread : Initializing database...
+2022-03-09 14:36:43,591 INFO root MainThread : Seeding databaser with fake onderwijs data
+2022-03-09 14:36:46,591 WARNING werkzeug MainThread :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-09 14:36:46,592 INFO werkzeug MainThread :  * Running on http://192.168.96.3:5000/ (Press CTRL+C to quit)
+2022-03-09 14:36:46,594 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:36:47,964 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:36:47,966 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:39:55,174 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/project/app.py', reloading
+2022-03-09 14:39:55,249 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:39:56,434 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:39:56,438 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:40:12,652 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/manage.py', reloading
+2022-03-09 14:40:12,762 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:40:14,158 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:40:14,159 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:40:18,673 INFO root MainThread : Seeding databaser with fake onderwijs data
+2022-03-09 14:40:21,764 WARNING werkzeug MainThread :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-09 14:40:21,766 INFO werkzeug MainThread :  * Running on http://192.168.96.3:5000/ (Press CTRL+C to quit)
+2022-03-09 14:40:21,767 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:40:23,292 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:40:23,293 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:41:28,084 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/project/database.py', reloading
+2022-03-09 14:41:28,171 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:41:29,389 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:41:29,390 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:41:36,375 WARNING werkzeug MainThread :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-09 14:41:36,377 INFO werkzeug MainThread :  * Running on http://192.168.96.3:5000/ (Press CTRL+C to quit)
+2022-03-09 14:41:36,378 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-09 14:41:37,729 WARNING werkzeug MainThread :  * Debugger is active!
+2022-03-09 14:41:37,730 INFO werkzeug MainThread :  * Debugger PIN: 474-303-739
+2022-03-09 14:41:43,820 INFO werkzeug Thread-3 : 192.168.96.1 - - [09/Mar/2022 14:41:43] "GET /graphql?query=%7Binschrijving(filters%3A%7BdatumGt%3A%20%222020-01-01%22%7D)%20%7B%0A%20%20edges%20%7B%0A%20%20%20%20node%20%7B%0A%20%20%20%20%20%20datum%0A%20%20%20%20%20%20leerling%20%7B%0A%20%20%20%20%20%20%20%20voornaam%0A%20%20%20%20%20%20%20%20achternaam%0A%20%20%20%20%20%20%20%20adres%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20school%20%7B%0A%20%20%20%20%20%20%20%20naam%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20onderwijssoort%20%7B%0A%20%20%20%20%20%20%20%20omschrijving%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%20%20%0A%7D HTTP/1.1" 200 -
+2022-03-09 14:41:44,668 INFO werkzeug Thread-4 : 192.168.96.1 - - [09/Mar/2022 14:41:44] "POST /graphql HTTP/1.1" 200 -
+2022-03-09 14:41:47,029 INFO werkzeug Thread-5 : 192.168.96.1 - - [09/Mar/2022 14:41:47] "POST /graphql HTTP/1.1" 200 -
+2022-03-09 14:42:09,147 INFO werkzeug MainThread :  * Detected change in '/usr/src/app/project/app.py', reloading
+2022-03-09 14:42:09,250 INFO werkzeug MainThread :  * Restarting with stat
