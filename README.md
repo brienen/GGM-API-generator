@@ -39,9 +39,8 @@ Uses gunicorn + nginx.
 
 ### Test de API's 
 
-Ga naar [http://localhost:5000/graphql](http://localhost:5000/graphql) en je kan queries op de service afvuren. Er zit testdata in voor: leerling, school en inschrijving.
+Ga naar [http://localhost:5000/graphql](http://localhost:5000/graphql) en je kan queries op de service afvuren. Er zit testdata in voor: leerling, school en inschrijving.Hieronder een voorbeeld van een query.
 
-Hier een voorbeeld van een query.
-![Hier een voorbeeld van een query](/GraphQL.png). 
+![Hier een voorbeeld van een query](/GraphQL.png).
 
 Veel plezier en succes! Verbeteringen welkom :)
