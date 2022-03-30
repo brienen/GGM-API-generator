@@ -49,6 +49,7 @@ class leerlingFilter(FilterSet):
             "achternaam": [...],
             "adres": [...],
             "leeftijd": [...],
+            "geslacht": [...],
             "id": [...] }
 
 class locatieFilter(FilterSet):

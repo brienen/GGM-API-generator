@@ -13,13 +13,31 @@ services:
     depends_on:
       - db
   db:
-    image: postgres:13-alpine
+    build: ./services/db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=hello_flask
       - POSTGRES_PASSWORD=hello_flask
       - POSTGRES_DB=hello_flask_dev
+    ports:
+      - 5432:5432
+
+  jupyter:
+    build: ./services/jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./services/jupyter/notebooks:/home/jovyan/
+      - ./services/web/project/:/opt/project/
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+
 
 volumes:
   postgres_data:

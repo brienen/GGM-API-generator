@@ -83,6 +83,7 @@ class leerling(Base):
     achternaam = Column(String)
     adres = Column(String)
     leeftijd = Column(Integer)
+    geslacht = Column(String)
 
     startkwalificatieID = Column(ForeignKey("startkwalificatie.id", deferrable=True), index=True)
     startkwalificatie = relationship("startkwalificatie", backref="leerling")
