@@ -76,6 +76,6 @@ Nadat je de GUID van het model hebt gekozen is uitgenereren van de API's makkeli
 
 ![Dit kun je in een keer uitvoeren](/restartKernel.png).
 
-Zorg dat je daarna de server herstart door in het console 'docker-compose up' te geven, en zorg dat je het [graphql-scherm](http://localhost:5000/graphql) in je browser te herlaad. Nu zie je de API's van jouw model in je browser op http://localhost:5000/graphql.
+Zorg dat je daarna de server herstart door in het console 'docker-compose up' te geven, en zorg dat je het [graphql-scherm](http://localhost:5000/graphql) in je browser te opnieuw laadt. Nu zie je de API's van jouw model in je browser op http://localhost:5000/graphql.
 
 Veel [plezier](https://nl.wiktionary.org/wiki/plezier)! 
