@@ -23,7 +23,7 @@ from sqlalchemy.engine import reflection
 
 
 object_properties = ['object_id',
- 'object_type',
+ 'object_type', 'stereotype',
  'name',
  'alias',
  'author',
@@ -34,7 +34,7 @@ object_properties = ['object_id',
  'parentid',
  'package_id',
  'modifieddate']
-output_properties = ['object_type',
+output_properties = ['object_id','object_type','stereotype',
  'name',
  'alias',
  'author',
@@ -66,6 +66,7 @@ connector_properties = ['connector_id',
 
 sql_classes = """select 
 o.object_id as object_id,
+o.stereotype as stereotype,
 o.Object_Type as object_type,  
 o.Name as name,  
 o.Alias as alias,  
@@ -78,7 +79,7 @@ o.ParentID as parentid,
 o.Package_ID as package_id,
 o.ModifiedDate as modifieddate
 FROM t_object o
-Where o.Object_Type IN (\'Package\', \'Class\', \'Enumeration\')"""
+Where o.Object_Type IN (\'Package\', \'Class\', \'Enumeration\', \'DataType\')"""
 
 sql_attributes = """select 
 a.object_id as attribute_object_id,
@@ -146,8 +147,8 @@ def get_parent(package_ID, df_objecten):
     else:
         return str(pID)
 
-def get_children(df, root_guid):
-    select_columns = output_properties + ['tree']
+def get_children(df, root_guid, props=output_properties):
+    select_columns = props + ['tree']
     rename_columns = {'name_y':'package_name'}
 
     df_package = df[df.object_type == 'Package'].copy()
@@ -197,3 +198,11 @@ def get_df_complete(uri, root_guid=None):
     
     
 
+def get_df_objectsHierar(uri, root_guid=None):
+    df_classes = get_df(uri, sql_classes)
+    
+    if root_guid and df_classes[df_classes.ea_guid.str.contains(root_guid)].count()[0] == 1:
+        lst_prop = [item for item in output_properties if item not in ['attributes','start_connectors','end_connectors']]
+        return get_children(df_classes, root_guid, props=lst_prop)
+    else:
+        return df_classes
